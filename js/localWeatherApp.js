@@ -28,7 +28,7 @@ $(document).ready(function() {
           url: api + '/conditions/forecast/q/' + coordsLat + ',' + coordsLong + '.json',
           method: 'GET'
         })
-        .then(getFarData());
+        .then(getFarData);
     });
   } else {
     idLocation.HTML = "Geolocation is not supported by this browser.";
